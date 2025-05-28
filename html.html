@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ارشيف الحالات</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: image-set('خلفية.png');
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .header {
+            background-color: #049B09;
+            width: 1920px;
+            height: 141px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        .logo {
+            width: 539px;
+            height: 381px;
+            background: url('شعار أفقي أبيض.png') no-repeat center center; /* استبدل 'path_to_logo.png' بمسار اللوجو */
+            background-size: contain;
+        }
+        .archive-title {
+            color: white;
+            font-size: 88px;
+            font-family: 'RB', sans-serif; /* تأكد من أن الخط RB متاح */
+            text-align: center;
+            flex-grow: 1;
+        }
+        .contact-info {
+            color: white;
+            font-size: 20px;
+            text-align: left;
+            justify-content: space-between;
+            padding: 2px;
+        }
+        .main-button {
+            background-color: black;
+            color: white;
+            width: 351px;
+            height: 91px;
+            font-size: 35px;
+            cursor: pointer;
+            text-align: center;
+            line-height: 91px; /* Center text vertically */
+            position: relative;
+            margin-left: 1556px;
+            font-family: 'RB', sans-serif;
+        }
+        .dropdown {
+            display: none; /* Hidden by default */
+            position: absolute;
+            background-color: #f9f9f9;
+            z-index: 1;
+            margin-top: 0px;
+            margin-left: 1556px;
+            font-family: 'RB', sans-serif;
+        }
+        .item {
+            background-color: #049B09;
+            border: 1px solid black;
+            width: 349px;
+            height: 77px;
+            margin: 1px 0; /* 1px margin between items */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 35px;
+            cursor: pointer;
+            font-family: 'RB', sans-serif;
+        }
+        .item a {
+            color: white;
+            text-decoration: none;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'RB', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="contact-info">
+            <img src="Group 1.png" alt="">
+        </div>
+        <div class="archive-title">أرشيف الحالات</div>
+        <div class="logo"></div>
+    </div>
+    <div>
+        <div class="main-button" onclick="toggleDropdown()">قائمة القرى</div>
+        <div class="dropdown" id="dropdown">
+            <div class="item"><a href="إدمو.html">إدمو</a></div>
+            <div class="item"><a href="كوم الزهير.html">كوم الزهير</a></div>
+            <div class="item"><a href="الشيخ عبد الرازق.html">الشيخ عبد الرازق</a></div>
+            <div class="item"><a href="طحا.html">طحا</a></div>
+            <div class="item"><a href="اطسا البلد.html">اطسا البلد</a></div>
+            <div class="item"><a href="ابو هلال.html">ابو هلال</a></div>
+            <div class="item"><a href="بني حسن.html">بني حسن</a></div>
+            <div class="item"><a href="ههيا.html">ههيا</a></div>
+            <div class="item"><a href="صفط الشرقية.html">صفط الشرقية</a></div>
+        </div>
+    </div>
+    <img src="الكلمة.png" alt="">
+    <script>
+        function toggleDropdown() {
+            const dropdown = document.getElementById('dropdown');
+            dropdown.style.display = dropdown.style.display === 'none' || dropdown.style.display === '' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

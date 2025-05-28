@@ -1,0 +1,39 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+#dropdownMenu {
+    display: none; /* إخفاء القائمة بشكل افتراضي */
+    position: absolute;
+    background-color: #049B09;
+    min-width: 351px;
+    box-shadow: 0px 20px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: black;
+    border-radius: 5;
+    min-height: 91;
+}
+
+#dropdownMenu a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    min-width: 230px;
+    min-height: 77px;
+    border-color: rgb(0, 0, 0);
+}
+
+#dropdownMenu a:hover {
+    background-color: #747474;
+}
+
+#dropdownButton {
+    color: white;
+    background-color: black;
+    min-width: 351px;
+    min-height: 91px;
+    border-color: white;
+    border-spacing: 1px;
+}
